@@ -3,12 +3,12 @@ name : simple
 services:
 
  app:
-   images: yadibanyut/simple-apps
+   image: yadibanyut/simple-apps
    build: ./app
    ports:
-    - "5000:3000"
+     - "5000:3000"
    volumes:
-    - vol-simple:/app/public/images/
+     - vol-simple:/app/public/images/
 
 volumes:
  vol-2048:
