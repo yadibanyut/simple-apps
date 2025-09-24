@@ -1,0 +1,14 @@
+name : simple
+
+services:
+
+ app:
+   images: yadibanyut/simple-apps
+   build: ./app
+   ports:
+    - "5000:3000
+   volume:
+   - vol-simple:/app/public/images/
+
+volumes:
+ vol-2048:
